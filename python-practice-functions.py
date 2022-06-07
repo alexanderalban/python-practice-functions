@@ -27,6 +27,20 @@ class ranger(morphin_grid_user):
         self.zord = zord
         self.weapon = weapon
 
+    def morph(self):
+        print(self.zord + "!")
+
+    def catchphrase(self):
+        print("Go Go Power Rangers!")
+
+
+jason = ranger("Jason Lee Scott", "Red", "Tyrannosaurus", "Power Sword")
+kimberly = ranger('Kimberly Hart', "Pink", "Pterodactyl", "Power Bow")
+trini = ranger("Trini Kwan", "Yellow", "Sabretooth Tiger", "Power Daggers")
+zack = ranger("Zack Taylor", "Black", "Mastodon", "Power Axe")
+billy = ranger("Billy Cranston", "Blue", "Triceratops", "Power Lance")
+tommy = ranger("Tommy Oliver", "Green", 'Dragonzord', 'Dragon Dagger')
+
 # DC classes
 
 
@@ -47,6 +61,7 @@ class avenger(earth_defender):
 
 
 # Lets have fun
-red_ranger = ranger("Jason Lee Scott", "Red", "Tyrannosaurus", "Power Sword")
 
-print(red_ranger.name)
+print(kimberly.name)
+tommy.morph()
+print(billy.alignment)
