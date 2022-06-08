@@ -66,10 +66,19 @@ class kryptonian:
 class supermen(jla_member, kryptonian):
     pass
 
+class green_lantern:
+    weapon = "Power Ring"
+    powers = "flight, energy projection, energy construct creation"
+    motto = "\tIn Brightest Day\n\tIn Blackest Night\n\tNo Evil Shall Escape My Sight\n\tLet Those Who Worship Evil's Might\n\tBeware My Power\n\tGreen Lantern's Light!"
+
+class earth_lantern(jla_member, green_lantern):
+    pass
+
 
 batman = jla_member("Batman", "Bruce Wayne", "Gotham City",
                     "World's Greatest Detective, intense physical training,, scientist, billionaire")
 superman = supermen("Superman", "Clark Kent", "Metropolis", kryptonian.powers)
+hal_jordan = earth_lantern("Green Lantern", "Hal Jordan", "Coast City", green_lantern.powers)
 
 # Marvel Classes
 
@@ -88,3 +97,4 @@ print(kimberly.name)
 tommy.morph()
 print(batman.powers)
 print(superman.powers)
+print(hal_jordan.motto)
