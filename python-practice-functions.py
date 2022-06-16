@@ -90,6 +90,8 @@ class avenger(earth_defender):
         self.city = city
         self.powers = powers
 
+iron_man = avenger("Iron Man", "Tony Stark", "New York", "Iron man suit, billionare, genius, philanthropist")
+captain_america = avenger("Captain America", "Steve Rogers", "Queens", "super soldier serum, super strength, endurance")
 
 # Lets have fun
 
