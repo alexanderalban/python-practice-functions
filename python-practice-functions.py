@@ -34,6 +34,12 @@ class ranger(morphin_grid_user):
     def catchphrase(self):
         print("Go Go Power Rangers!")
 
+    def zord(self):
+        print("We need Dinozord power, now!")
+
+    def megazord(self):
+        print("We need Megazord Power, now!")
+
 
 jason = ranger("Jason Lee Scott", "Red", "Tyrannosaurus",
                "Power Sword", "Angel Grove")
@@ -76,8 +82,9 @@ class earth_lantern(jla_member, green_lantern):
 
 
 batman = jla_member("Batman", "Bruce Wayne", "Gotham City",
-                    "World's Greatest Detective, intense physical training,, scientist, billionaire")
+                    "World's Greatest Detective, intense physical training, scientist, billionaire")
 superman = supermen("Superman", "Clark Kent", "Metropolis", kryptonian.powers)
+supergirl = supermen("Supergirl", "Kara Zor-El", "Metropolis", kryptonian.powers)
 hal_jordan = earth_lantern("Green Lantern", "Hal Jordan", "Coast City", green_lantern.powers)
 
 # Marvel Classes
