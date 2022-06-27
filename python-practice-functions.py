@@ -107,3 +107,16 @@ tommy.morph()
 print(batman.powers)
 print(superman.powers)
 print(hal_jordan.motto)
+
+# Let's actually do something now. A list of objects
+
+rangerlist = [jason, tommy, trini, kimberly, zack, billy]
+dclist = [superman, batman, supergirl, hal_jordan]
+marvellist = [iron_man, captain_america]
+
+def namefunc(listname):
+    for fighter in listname:
+        print(fighter.name)
+
+namefunc(rangerlist)
+namefunc(dclist)
