@@ -5,6 +5,7 @@
 
 
 from ctypes import alignment
+from random import random
 
 
 class earth_defender:
@@ -114,9 +115,48 @@ rangerlist = [jason, tommy, trini, kimberly, zack, billy]
 dclist = [superman, batman, supergirl, hal_jordan]
 marvellist = [iron_man, captain_america]
 
+# A function to list the name of the objects in the list
 def namefunc(listname):
     for fighter in listname:
         print(fighter.name)
 
-namefunc(rangerlist)
-namefunc(dclist)
+# A function to select a random fighter. import random
+# import random gives us the handy random.choice function for our lists
+import random
+
+randomfighter = random.choice(rangerlist)
+
+print(randomfighter.name + " " + randomfighter.color)
+
+# This is a way to print the values for the list
+print(randomfighter.__dict__)
+
+fighterdef = randomfighter.__dict__
+
+# And another
+fighterval = vars(randomfighter)
+
+for attribute in fighterdef:
+    print(attribute.title())
+
+print(fighterval)
+
+for val in fighterval:
+    print(val.title())
+
+# Prettier format for the values
+import pprint
+
+pprint.pprint(fighterval)
+
+
+# This is the main list for the app
+fighterlist = rangerlist + dclist + marvellist
+
+print(fighterlist)
+
+def fighterselect():
+    fighter = random.choice(fighterlist)
+    pprint.pprint(vars(fighter))
+
+fighterselect()
